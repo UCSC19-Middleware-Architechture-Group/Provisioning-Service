@@ -37,8 +37,4 @@ public class ServicesController {
     public String deleteService(@PathVariable String id) {
         return servicesService.deleteService(id);
     }
-
-
-
-
 }

@@ -8,7 +8,7 @@ import java.util.List;
 
 @Repository
 public interface ServiceActivationRepository extends MongoRepository<ServiceActivation, String> {
-    List<ServiceActivation> findByAccountIdAndStatus(String accountId, String activated);
+    List<ServiceActivation> findByEmailAndStatus(String accountId, String activated);
 
 //    List<ServiceActivation> findByAccountIdAndStatus(String accountId, String status);
 

@@ -8,7 +8,8 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class ServiceActivation {
     private String id;
     private String serviceId;
-    private String accountId;
+    private String email;
+    private String phoneNo;
     private String activationDate;
     private String deactivatedDate;
     private String status;

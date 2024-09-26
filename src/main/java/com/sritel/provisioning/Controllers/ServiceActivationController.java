@@ -9,13 +9,13 @@ import java.util.List;
 
 @RestController
 @CrossOrigin
-@RequestMapping(path = "api/Provisioning_Service/service_activation")
+@RequestMapping(path = "api/v1/service_activation")
 @AllArgsConstructor
 public class ServiceActivationController {
     private final ServiceActivationService serviceActivationService;
-    @GetMapping("/service_details/{id}")
-    public List<ServiceActivation> getServiceDetails(@PathVariable String id) {
-        return serviceActivationService.activatedServiceList(id);
+    @GetMapping("/service_details/{email}")
+    public List<ServiceActivation> getServiceDetails(@PathVariable String email) {
+        return serviceActivationService.activatedServiceList(email);
     }
 
     @PostMapping("/activate_service")

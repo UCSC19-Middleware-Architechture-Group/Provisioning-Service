@@ -9,7 +9,7 @@ import java.util.List;
 
 @RestController
 @CrossOrigin
-@RequestMapping(path = "api/Provisioning_Service/service")
+@RequestMapping(path = "api/v1/service")
 @AllArgsConstructor
 public class ServicesController {
     private final ServicesService servicesService;

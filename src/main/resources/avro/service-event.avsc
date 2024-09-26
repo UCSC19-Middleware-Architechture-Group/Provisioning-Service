@@ -1,0 +1,43 @@
+{
+  "type": "record",
+  "name": "ServiceEvent",
+  "namespace": "com.sritel.provisioning.event",
+  "fields": [
+    {
+      "name": "serviceId",
+      "type": "string"
+    },
+    {
+      "name": "email",
+      "type": "string"
+    },
+    {
+      "name": "activationDate",
+      "type": "string"
+    },
+    {
+      "name": "status",
+      "type": "string"
+    },
+    {
+      "name": "serviceName",
+      "type": "string"
+    },
+    {
+      "name": "serviceType",
+      "type": "string"
+    },
+    {
+      "name": "serviceDescription",
+      "type": "string"
+    },
+    {
+      "name": "serviceCategory",
+      "type": "string"
+    },
+    {
+      "name": "serviceCharge",
+      "type": "float"
+    }
+  ]
+}

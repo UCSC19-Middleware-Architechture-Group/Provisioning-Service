@@ -1,6 +1,7 @@
 package com.sritel.provisioning.Controllers;
 
 import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 import com.sritel.provisioning.Models.ServiceActivation;
 import com.sritel.provisioning.Services.ServiceActivationService;
@@ -10,7 +11,7 @@ import java.util.List;
 @RestController
 @CrossOrigin
 @RequestMapping(path = "api/v1/service_activation")
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class ServiceActivationController {
     private final ServiceActivationService serviceActivationService;
     @GetMapping("/service_details/{email}")
